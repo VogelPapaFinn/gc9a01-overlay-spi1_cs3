@@ -145,8 +145,8 @@ Clone the repository:
 
 ```
 cd ~
-git clone https://github.com/juliannojungle/gc9a01-overlay
-cd gc9a01-overlay
+git clone https://github.com/VogelPapaFinn/gc9a01-overlay-spi1_cs3.git
+cd gc9a01-overlay-spi1_cs3
 ```
 
 Build overlay:
@@ -159,7 +159,7 @@ Build overlay:
 Load overlay:
 
 ```
-sudo ´reboot now
+sudo reboot now
 ```
 
 Check for info on boot process:
