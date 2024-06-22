@@ -2,6 +2,11 @@
 
 # GC9A01 FBTFT overlay
 
+This is a fork of the original dtoverlay for the GC9A01. For my project I need to use three different displays at once. Therefore I changed the overlay to use SPI1 instead of SPI0 because it allows the use of 3x CS pins. To use with SPI0 and only 2x CS pins, all you have to do is removing: "spidev@2", gc9a01_3_pins", "gc9a01@2" and replacing "spi1" (two times) with "spi0"!
+The following lines are all from the forked repo. This is everything I changed (so far)!
+
+
+### Note from the forked repo
 The `gc9a01-overlay.dts` [was commited](https://github.com/raspberrypi/linux/commit/efaad621ac01729c9656c47ce009ddb8e7698e16) on the official [Raspberry Pi Linux kernel](https://github.com/raspberrypi/linux). Development on this repository has ceased and any issue or new feature should be handled [there](https://github.com/raspberrypi/linux/blob/rpi-5.15.y/arch/arm/boot/dts/overlays/gc9a01-overlay.dts).
 
 ---
