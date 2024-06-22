@@ -1,0 +1,18 @@
+# General Pins
+DIN	= GPIO 20
+SLCK	= GPIO 21
+
+# Framebuffer 1
+CS	= GPIO 16 (SPI1 CE2)
+DC	= GPIO 13
+RST	= GPIO 26
+
+# Framebuffer 2
+CS	= GPIO 17 (SPI1 CE1)
+DC	= GPIO 25
+RST	= GPIO 27
+
+# Framebuffer 3
+CS	= GPIO 18 (SPI CE0)
+DC	= GPIO 5
+RST	= GPIO 6
